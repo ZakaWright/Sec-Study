@@ -1,0 +1,671 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Domain 2</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+	<link rel="stylesheet" href="css2.css">
+</head>
+
+<body>
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  		<a class="navbar-brand" href="#">Home</a>
+  		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+
+  		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    		<ul class="navbar-nav mr-auto">
+     			<li class="nav-item active">
+        			<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="domain1.html">Domain 1</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="domain2.html">Domain 2</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="domain3.html">Domain 3</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="domain4.html">Domain 4</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="domain5.html">Domain 5</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="domain6.html">Domain 6</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="definitions.html">Definitions</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="protocols.html">Protocols</a>
+      			</li>
+      			<li class="nav-item">
+        			<a class="nav-link" href="hashingalgorithms.html">Hashing Algorithms</a>
+      			</li>
+    		</ul>
+  		</div>
+	</nav>
+
+	<div class="container">
+		<h3>Redundancy and Fault tolerance</h3>
+		<h4>Types</h4>
+		<ul>
+			<li>Disk Redundancies</li>
+			<li>Server Redundancy</li>
+			<li>Load Balancing</li>
+			<li>Site Redundancies</li>
+			<li>Backups</li>
+			<li>Alternate Power</li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<h3>Contorl Implementation Methods</h3>
+		<h4>Technical Controls</h4>
+		<p>Admin configs/installs -> the system provides the protection automatically</p>
+		<p>Examples:</p>
+		<ul>
+			<li>Encryption</li>
+			<li>Antivirus Software</li>
+			<li>Intrusion Detection System (IDS)</li>
+			<li>Firewalls</li>
+			<li>Least Privelage</li>
+		</ul>
+
+		<h4>Management Controls</h4>
+		<p>Examples</p>
+		<ul>
+			<li>Risk assessments</li>
+			<li>Vulnerability assessments</li>
+			<li>Penetration tests</li>
+
+		</ul>
+
+		<h4>Operational Controls</h4>
+		<p>Help ensure that day-to-day operations of an organization comply with overall security plan.</p>
+		<p>Examples:</p>
+		<ul>
+			<li>Awareness and training</li>
+			<li>Configuration and change management</li>
+			<li>Contigency planning</li>
+			<li>Media protection</li>
+			<li>Physical and enviromental protection</li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<h3>Control Goals</h3>
+
+		<h4>Preventative Controls</h4>
+		<p>Types:</p>
+			<ul>
+				<li>Hardening</li>
+				<li>Security awareness and training</li>
+				<li>Security guards</li>
+				<li>Change management
+					<ul>
+						<li>Ensures that changes don't result in unintended outages</li>
+						<li>Instead of admins making changes on the fly, submit teh change to a change management process</li>
+						<li>Also an operational control</li> <!-- see also managing accounts section-->
+					</ul>
+				</li>
+				<li>Account disablement policy</li>
+			</ul>
+
+			<h4>Detective Controls</h4>
+			<p>Discover the event after it has occured</p>
+			<p>Types:</p>
+			<ul>
+				<li>Log monitoring</li>
+				<li>Tend analysis</li>
+				<li>Security audit</li>
+				<li>Video surveillance</li>
+				<li>Motion detection</li>
+			</ul>
+
+
+			<h4>Corrective Controls</h4>
+			<p>Reverse something AFTER it occurs</p>
+			<p>Types:</p>
+			<ul>
+				<li>Active IDS</li>
+				<li>Backups and system recovery</li>
+			</ul>
+
+			<h4>Deterent Controls</h4>
+			<p>Many are also preventative controls</p>
+			<p>Examples of physical security that can be used to deter threats:</p>
+			<ul>
+				<li>Cable locks</li>
+				<li>Hardware locks</li>
+			</ul>
+
+			<h4>Compensation Controls</h4>
+			<a href="definitions.html"><p>See definitions</p></a>
+			<p>Example: A new employee hasn't recieved a smart card yet so you implement a TOTP for multifactor authentication</p>
+	</div>
+
+	<div class="container">
+		<h3>Physical Security Controls</h3>
+		<ul>
+			<li>Perimeter</li>
+			<li>Building</li>
+			<li>Secure work areas</li>
+			<li>Server and network rooms</li>
+			<li>Hardware</li>
+			<li>Doors
+				<ul>
+					<li>Cipher locks</li>
+					<li>Proximity cards</li>
+					<li>Biometrics</li>
+				</ul>
+			</li>
+			<li>ID Badges
+				<ul>
+					<li>Tailgating</li>
+				</ul>
+			</li>
+			<li>Security Guards</li>
+			<li>Access lists and logs</li>
+			<li>Video surveillance</li>
+			<li>Baricades</li>
+			<li>Signs</li>
+			<li>Hardware locks
+				<ul>
+					<li>Cable locks</li>
+					<li>Locking cabinets (for servers)</li>
+					<li>Safes</li>
+				</ul>
+			</li>
+
+		</ul>
+	</div>
+
+	<div class="container">
+		<h3>Detection Methods</h3>
+		<h4>IDS</h4>
+		<p>Types:</p>
+		<ul>
+			<li>Passive IDS</li>
+			<li>Active IDS</li>
+		</ul>
+
+		<h4>Honeypots</h4>
+		<p>Goals:</p>
+		<ul>
+			<li>Divert attackers from the live network</li>
+			<li>ALlow observation of the attacker</li>
+		</ul>
+
+		<h4>Honeynets</h4>
+	</div>
+
+	</br>
+
+	<div class="container">
+		<h3>Protecting Data</h3>
+		<h4>Data Catagories</h4>
+		<ul>
+			<li>Data at rest</li>
+			<li>Data in transit</li>
+			<li>Data in use (stored in RAM)</li>
+		</ul>
+
+		<h3>Using Encryption</h3>
+		<h4>Software-Based Encryption</h4>
+		<ul>
+			<li>File-level encryption</li>
+			<li>Full disk encryption</li>
+			<li>Encrypting database content
+				<ul>
+					<li>Encrypt the whole database or encrypt specefic data elements (more common)</li>
+				</ul>
+			</li>
+		</ul>
+		<h4>Hardware-based Encryption</h4>
+		<ul>
+			<li>TPM (Trusted Platform Module)
+				<ul>
+					<li>Hardware chip in computers motherboard</li>
+					<li>Full disk encryption capabilities</li>
+					<li>Ships with RSA (Rivest, Shamir, Adleman) key used for asymetric encryption</li>
+					<li>Can generate, store, and protect other keys used for encrypting/decrypting disks</li>
+					<li>3 categories of encryption keys:
+						<ul>
+							<li>Endorsement key - manufacturer embeded, stays with TPM throughout lifetime.</li>
+							<li>Storage root key - created when user adds TPM owner password and activates module, used to create and protect other encryption keys w/in applications</li>
+							<li>Application keys - derived from storage root key and used to encrypt entire disks</li>
+						</ul>
+					</li>
+					<li>Use an application in the OS to enable (ex. BitLocker in Windows)
+						<ul>
+							<li>Keeps the drive locked if someone actually takes the device</li>
+							<li>Can detect tampering and lock the HDD</li>
+						</ul>
+					</li>
+
+				</ul>
+			</li>
+			<li>HSM (Hardware Security Module)
+				<ul>
+					<li>Can add to a system</li>
+					<li>Used to manage, generate, and securely store cryptographic keys</li>
+				</ul>
+			</li>
+		</ul>
+
+		<h4>Data Leakage</h4>
+		<ul>
+		    <li>Data Loss Prevention
+		        <ul>
+		            <li>DLP (Datat Loss Prevention)
+		                <ul>
+		                    <li>AKA data leak prevention</li>
+		                    <li>Can be network based for data in motion, storage based for data at rest, or endpoint based for data in use</li>
+		                </ul>
+		            </li>
+		        </ul>
+		    </li>
+		</ul>
+
+		<h4>SAN (Storage Area Network)</h4>
+		<ul>
+		    <li>Fibre Channel <ul>
+		        <li>Traditional TCP/IP network</li>
+		        <li>Supports copper or fiber connections</li>
+		        <li>Drawback - require specialized hardware and cabling (expensive)</li>
+		    </ul></li>
+		    <li>iSCSI (Internet Small Computer System Interface)
+		        <ul>
+		            <li>Can utilize an existing network infrastructure to connect systems</li>
+		        </ul>
+		    </li>
+		    <li>FCoE (Fibere Channel over Ethernet)
+		        <ul>
+		            <li>Uses FC commands over traditional Ethernet networks (encapsulates commands from TCP/IP into FC commands</li>
+		            <li>Basically best of both worlds of FC and iSCSI</li>
+		        </ul>
+		    </li>
+
+		</ul>
+
+	</div>
+
+	<div class="container">
+	    <h3>Identifying Risk</h3>
+        <h4>Threats and Threat Vectors</h4>
+	    <p>Types of threats</p>
+	    <ul>
+	        <li>Natural threats</li>
+	        <li>Malicious human threats</li>
+	        <li>Accidental human threats</li>
+	        <li>Enviromental threats</li>
+	    </ul>
+        <h4>Malicious Insider Threat</h4>
+        <h4>Threat Assessments</h4>
+
+        <h4>Vulnerabilities</h4>
+        <p>Examples:</p>
+        <ul>
+            <li>Lack of updates</li>
+            <li>Default configurations</li>
+            <li>Lack of malware protection or updated definitions</li>
+            <li>Lack of firewalls</li>
+            <li>Lack of organizational policies</li>
+        </ul>
+
+        <h4>Risk Management</h4>
+        <p>Common methods:</p>
+        <ul>
+            <li>Avoidance</li>
+            <li>Transference</li>
+            <li>Acceptance</li>
+            <li>Mitigation</li>
+            <li>Deterence</li>
+        </ul>
+
+        <h4>Using Documents to Identify Risk</h4>
+        <ul>
+            <li>Mean time between failures (MTBF)
+                <ul>
+                    <li>Measure of systems reliability</li>
+                </ul>
+            </li>
+            <li>Mean time to failure (MTTF)
+                <ul>
+                    <li>Length of time you can expect a device to remain in operation before it fails</li>
+                </ul>
+            </li>
+            <li>Mean time to Recover (MTTR)
+                <ul>
+                    <li>Average time it takes to restorer a failed system</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Checking for Vulnerabilities
+            <h4>Anatomy of an Attack</h4>
+        </h3>
+        <ul>
+            <li>Identifying IP Addresses <ul>
+                <li>Often assigned geographically -> use ICMP sweep to find hosts</li>
+            </ul></li>
+            <li>Identifying open ports with a port scanner <ul>
+                <li>Should reduce the attack surface by disabling all unused services and removing all unneeded protocols</li>
+            </ul></li>
+            <li>Fingerprint System <ul>
+                <li>Find info about systems</li>
+            </ul></li>
+            <li>Banner Grabbing <ul>
+                <li>Grab info from HTML to find out info about server</li>
+            </ul></li>
+            <li>Idenfying Vulnerabilities</li>
+            <li>Attack</li>
+            <li>Putting it all together
+                <ul>
+                    <li>APT (Advanced Persistent Threat) - group with capability and intent to launch sophisticated and targeted attacks</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Vulnerability Assessment</h3>
+        <h4>Vulnerability Scanning (a type of management control)</h4>
+        <ul>
+            <li>Identifying Vulnerabilities and Misconfigurations
+                <ul>
+                    <li>Examples of vulnerabilities and common misconfigurations: <ul>
+                        <li>Open ports</li>
+                        <li>Weak passwords</li>
+                        <li>Default accounts and passwords</li>
+                        <li>Sensitive data</li>
+                        <li>Security and configuration errors</li>
+                    </ul></li>
+                </ul>
+            </li>
+            <li>Passively Testing Secuirty Controls</li>
+            <li>Identifying Lack of Security Controls
+                <ul>
+                    <li>False postives are possible</li>
+                </ul>
+            </li>
+        </ul>
+
+        <br>
+        <h4>Other Assessment techniques</h4>
+        <p>Testing techniques:</p>
+        <ul>
+            <li>Baseline <reportingul>
+                <li>Identifies changes from the standard configuration</li>
+            </reportingul></li>
+            <li>Code review <ul>
+                <li>goes line-by-line through the code to help identify vulnerabilities</li>
+            </ul></li>
+            <li>Attack surface reviewul</li>
+            <li>Architecture review <ul>
+                <li>Physical layout/network architecture</li>
+            </ul></li>
+            <li>Design review</li>
+        </ul>
+
+        <h4>Credentialed vs Noncredentialed</h4>
+        <ul>
+            <li>Attackers usualy start with no credentials/permissions and work their way up to admin access</li>
+        </ul>
+        <h4>Penetration Testing</h4>
+        <p>Most include the following:</p>
+        <ul>
+            <li>Verify threat exists</li>
+            <li>Bypass security controls</li>
+            <li>Actively test security controls</li>
+            <li>Exploit vulnerabilies</li>
+        </ul>
+
+        <h4>White/Gray/Black Box Testing</h4>
+        <ul>
+            <li>White Box
+                <ul>
+                    <li>Full knowledge of enviroment</li>
+                </ul>
+            </li>
+            <li>Gray Box
+                <ul>
+                    <li>Testers have some knowledge of teh system</li>
+                </ul>
+            </li>
+            <li>Black Box
+                <ul>
+                    <li>Testers do not know anything about teh enviroment</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Intrusive vs Nonintrusive Testing</h4>
+        <ul>
+            <li>Intrusive - attempts to exploit vulnerabilities</li>
+            <li>Nonintrusive - attempts to determine if vulnerabilities exist</li>
+        </ul>
+
+        <h4>Protocol Analyzer (Packet Sniffer)</h4>
+        <ul>
+            <li>Source IP does not always correlate to the attacker</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Adding Redundancy</h3>
+    <h4>Single Points of Failure</h4>
+    <ul>
+        <li>Disk Redndancy<ul>
+            <li>RAID-0 <ul>
+                <li>Striping</li>
+                <li>100% of storage available</li>
+                <li>No redundancy</li>
+                <li>Two or more disks</li>
+            </ul></li>
+            <li>RAID-1 <ul>
+                <li>Mirroring</li>
+                <li>Can have 50% of the storage</li>
+                <li>Two or more disks</li>
+                <li>Adding a second disk controller to a mirror is called disk duplexing</li>
+            </ul></li>
+            <li>RAID-5 <ul>
+                <li>Three or more disks striped together using RAID-0</li>
+                <li>One drive includes parity information</li>
+                <li>Can continue operating after a single disk failure</li>
+            </ul></li>
+            <li>RAID-6 <ul>
+                <li>RAID-5 with additional parity block</li>
+                <li>Minimum of four disks</li>
+            </ul></li>
+            <li>RAID-10 <ul>
+                <li>Combines RAID-1 and RAID-0</li>
+                <li>Combined features of striping and mirroring</li>
+            </ul></li>
+            <li>Software vs Hardware RAID <ul>
+                <li>Hardware is better than software</li>
+                <li>Hardware can logically take a failed disk out and rebuild the array</li>
+            </ul></li>
+        </ul></li>
+        <li>Server Redundancy <ul>
+            <li>Failover Clusters <ul>
+                <li>Multiple servers in a cluster configuration</li>
+                <li>When one server fails the rest can continue operating</li>
+            </ul></li>
+            <li>Load Balancer <ul>
+                <li>Optimizes and distributes data loads accross multiple computers or multiple networks</li>
+                <li>Hardware or software</li>
+                <li>Provides scalability and avaliability</li>
+            </ul></li>
+        </ul></li>
+        <li>Power Redundancy <ul>
+            <li>UPS (Uninteruptable Power Supply) <ul>
+                <li>Gives supported system enough time to power down</li>
+                <li>Gives generators enough time to stabalize</li>
+                <li>Commercial power returns (power flickering)</li>
+            </ul></li>
+            <li>Generator</li>
+        </ul></li>
+    </ul>
+    </div>
+
+    <div class="container">
+        <h3>Comparing Backup Types</h3>
+        <h4>Full Backup</h4>
+        <ul>
+            <li>Backup of the entire disk</li>
+        </ul>
+        <h4>Differential Backup</h4>
+        <ul>
+            <li>Backs up data changed since last full backup</li>
+            <li>Needs full backup and one differential to restore a disk</li>
+        </ul>
+        <h4>Incremental Backup</h4>
+        <ul>
+            <li>Backs up data changed since last full/incremental backup</li>
+            <li>Needs full backup and however many incremental backups have happened to restore</li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <h3>Buisness Impact Analysis (BIA)</h3>
+        <p>Hepls an organization identify critical systems and components that are essential to the orgazniations success</p>
+        <h4>Recovery Time Objective (RTO)</h4>
+        <ul>
+            <li>Maximum time it can take to restore a system after an outage</li>
+        </ul>
+        <h4>Recovery Point Objective (RPO)</h4>
+        <ul>
+            <li>Ammount of data you can afford to loose</li>
+        </ul>
+
+        <h4>Continuity of Operations (COOP/COP)</h4>
+        <ul>
+            <li>Focuses on restoring critical business functions at an alternate location after a critical outage</li>
+            <li>4 types of alternate sites <ul>
+                <li>Hot Sites
+                    <ul>
+                        <li>Operational 24 hours a day and ready to take over functionality immediately</li>
+                        <li>Ready in Hours to Days</li>
+                    </ul>
+                </li>
+                <li>Cold Sites
+                    <ul>
+                        <li>Does not have any equipment - must all be brought in</li>
+                        <li>Cheapest to maintain</li>
+                        <li>Weeks to months</li>
+                    </ul>
+                </li>
+                <li>Warm Sites
+                    <ul>
+                        <li>Does not have up to date data or something else</li>
+                        <li>Days to weeks</li>
+                    </ul>
+                </li>
+                <li>Mobile Sites
+                    <ul>
+                        <li>Self contained transportable unit with all the equipment needed for specific requirements</li>
+                    </ul>
+                </li>
+                <li>Mirrored Site
+                   <ul>
+                    <li>Identical to primary location and provide 100% availability</li>
+                </ul></li>
+            </ul></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h3>Security Policies</h3>
+        <h4>Personnel Policies</h4>
+        <ul>
+            <li>Acceptable Use Policy and Privacy Policy <ul>
+                <li>AUP defines system usage. Usually includes statements informing users that systems are in place monitoring their activities</li>
+                <li>Privacy Policy - what happens with your PII and how it's stored</li>
+            </ul></li>
+            <li>Mandatory Vacations <ul>
+                <li>Help detect when employees are involved in malicious activity such as fraund or embezzlement</li>
+            </ul></li>
+            <li>Seperation of Duties <ul>
+                <li>Prevents one person from being able to complete all functions in a critical/sensitive process</li>
+            </ul></li>
+            <li>Job Rotation <ul>
+                <li>Move people around occassionally so they can't continue fradulent activity forever</li>
+            </ul></li>
+            <li>Clean Desk Policy <ul>
+                <li>Keep desks free of papers to protect sensitive data</li>
+            </ul></li>
+        </ul>
+
+        <br>
+
+        <h4>Account Management Policies</h4>
+        <ul>
+            <li>Require Admins to use two accounts</li>
+            <li>Never use shared accounts <ul>
+                <li>Violates principle of accountability</li>
+            </ul></li>
+            <li>Third-party issues <ul>
+                <li>Off-board as soon as partnership is ended</li>
+                <li>Often use NDA</li>
+            </ul></li>
+            <li>Interoperability Agreements <ul>
+                <li>Interconnection Security Agreement (ISA) <ul>
+                    <li>Specifies technical and security requirements for planning, establishing, maintaining, and disconnecting a secure connection between two or more entities</li>
+                </ul></li>
+                <li>SLA (Service Level Agreement)
+                    <ul>
+                        <li>Performance expectations (min uptime and max downtime levels</li>
+                        <li>Often have a monetary penalty for violation</li>
+                    </ul>
+                </li>
+                <li>MOU (Memorandum for Understanding)
+                    <ul>
+                        <li>Expresses understanding between two/more parties</li>
+                        <li>Often used with ISAs</li>
+                    </ul>
+                </li>
+                <li>BPA (Business Parter Agreement)
+                    <ul>
+                        <li>Details relationship between business partners</li>
+                    </ul>
+                </li>
+            </ul></li>
+        </ul>
+
+        <h4>Change Management Policy</h4>
+        <p>See definitions</p>
+        <h4>Data Policies</h4>
+        <ul>
+            <li>Information classification</li>
+            <li>Data Labeling and handling</li>
+            <li>Data wiping and disposing <ul>
+                <li>Bit-level overwrite</li>
+                <li>Degauss the disk <ul>
+                    <li>Use a powerful electromagnet to render data on a disk unreadable</li>
+                </ul></li>
+                <li>Physical destruction</li>
+            </ul></li>
+            <li>Wiping files <ul>
+                <li>Shredding tools</li>
+                </ul></li></ul>
+            <h4>Storage and Retention Policies</h4>
+
+    </div>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
