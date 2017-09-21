@@ -55,6 +55,246 @@
 		<p>Alternative to hashing</p>
 	</div>
 
+    <div class="container">
+        <h4>Authentication Protocols:</h4>
+        <ul>
+            <li>PAP (Password Authentication Protocol) <ul>
+                <li>Used with PPP (Point to point Protocol) to authenticate clients</li>
+                <li>Sends password and pins in plain text</li>
+            </ul></li>
+            <li>CHAP (Challenge Handshake Authentication Protocol) <ul>
+                <li>Used with PPP to authenticate remote users</li>
+                <li>More secure than PAP</li>
+                <li>Client and server share a secret used in authentication (sent in cipher text)</li>
+                <li>Preformed at connection and several times after</li>
+                <li>MS-CHAP and MS-CHAPv2 <ul>
+                    <li>Improved for MS clients</li>
+                    <li>MS-CHAPv2 has the ability to preform mutual authentication</li>
+                </ul></li>
+            </ul></li>
+            <li>XTACAS <ul>
+                <li>Old Cisco proprietary protocol</li>
+            </ul></li>
+            <li>TACAS+ (Terminal Access Controller Access-Control System Plus) <ul>
+                <li>Cisco alternative to RADIUS</li>
+                <li>Can interact with Kerberos for authentication</li>
+            </ul></li>
+        </ul>
+
+        <br>
+
+        <h4>Encryption Protocols</h4>
+        <ul>
+            <li>SSH (Secure Shell)
+                <ul>
+                    <li class="port">Port: TCP 22</li>
+                    <li>Encrypts a wider variety of internet traffic</li>
+                </ul>
+            </li>
+            <li>SCP (Secure Copy)
+                <ul>
+                    <li class="port">Port: TCP 22</li>
+                    <li>Based on SSH</li>
+                    <li>Used to encrypt files over a network</li>
+                </ul>
+            </li>
+            <li>SSL (Secure Sockets Layer)
+                <ul>
+                    <li class="port">Port: <ul>
+                        <li class="port">TCP 443 (encrypting HTTP)</li>
+                        <li class="port">TCP 465 (encrypting SMTP)</li>
+                        <li class="port">TCP 636 (encrypting LDAP</li>
+                    </ul></li>
+                    <li>Secures HTTP traffic as HTTPS traffic</li>
+                </ul>
+            </li>
+            <li>TLS (Transport Layer Security)
+                <ul>
+                    <li class="port">Port:<ul>
+                        <li class="port">TCP 443 (encrypting HTTP)</li>
+                        <li class="port">TCP 636 (encrypting LDAPv3</li>
+                    </ul></li>
+                    <li>SSL replacement</li>
+                    <li>Can use instead of SSL in almost any application with the same ports</li>
+                </ul>
+            </li>
+            <li>IPSec
+                <ul>
+                    <li class="port">Port: UDP 50</li>
+                    <li>Used to encrypt IP traffic</li>
+                    <li>Uses tunnel mode to protect VPN traffic</li>
+                    <li>Two main components: <ol>
+                        <li>Authentication Header (AH) (protocol ID # 51)</li>
+                        <li>ESP (Encapsulating Security Payload) (protocol ID # 50)</li>
+                    </ol></li>
+                    <li>Uses IKE (Internet Key Exchange)</li>
+                </ul>
+            </li> </ul>
+            <h4>Application Protocols</h4>
+            <ul>
+            <li>HTTP (Hypertext Transfer Protocol)
+                <ul>
+                    <li class="port">Port: TCP 80</li>
+                </ul>
+            </li>
+            <li>HTTPS (HTTP Secure)
+                <ul>
+                    <li class="port">Port: TCP 443</li>
+                    <li>Encrypts web traffic to ensure it is secure in transit</li>
+                    <li>Encrypted with SSL or TLS</li>
+                </ul>
+            </li>
+            <li>FTP (File Transfer Protocol))
+                <ul>
+                    <li>Port: <p class="port">TCP 20</p> (for data) and TCP <p class="port">TCP 21</p> (for control signals)</li>
+                    <li>Uploads/downloads large files to and from an FTP server</li>
+                </ul>
+            </li>
+            <li>SFTP (Secure FTP)
+                <ul>
+                    <li class="port">Port: TCP 20 (for transport)</li>
+                    <li>Secured using SSH</li>
+                </ul>
+            </li>
+            <li>FTPS (FTP Secure)
+                <ul>
+                    <li class="port">Port: TCP 989 and 990</li>
+                    <li>Uses SSL or TSL to encrypt FTP traffic</li>
+                </ul>
+            </li>
+            <li>TFTP (Trivial FTP)
+                <ul>
+                    <li class="port">Port: UDP 69</li>
+                    <li>Uses UDP to transfer small amounts of data (ex. communicating with network devices)</li>
+                </ul>
+            </li>
+            <li>Telnet
+                <ul>
+                    <li class="port">Port: TCP 23</li>
+                    <li></li>
+                </ul>
+            </li>
+            <li>SNMP (Simple Network Management Protocol)
+                <ul>
+                    <li class="port">Port: UDP 161 and 162 (for errors)</li>
+                    <li>Monitors and manages network devices</li>
+                </ul>
+            </li>
+            <li>NetBIOS
+                <ul>
+                    <li class="port">Port: UDP 137 and 138 or TCP 139 (also 137 rarely) </li>
+                    <li>Name resolution service for names on internal networks</li>
+                </ul>
+            </li>
+            <li>LDAP (Lightweight Directory Access Protocol)
+                <ul>
+                    <li class="port">Port: TCP 389 (encrypted on TCP 636)</li>
+                    <li>Used to communicate with directories</li>
+                    <li>Provides a single location for object management</li>
+                    <li>Encrypted using TLS or SSL</li>
+                </ul>
+            </li>
+            <li>Kerberos
+                <ul>
+                    <li class="port">Port: UDP 88</li>
+                    <li>Authentication Protocol used in Microsoft domains and some Unix enviroments</li>
+                    <li>Uses KDL (Key Distribution Center) to issue timestamped tickets</li>
+                </ul>
+            </li>
+            <li>Microsoft SQL Server
+                <ul>
+                    <li class="port">Port: 1443</li>
+                </ul>
+            </li>
+            <li>RDP (Remote Desktop Protocol)
+                <ul>
+                    <li class="port">Port: TCP/UDP 3389</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Email Protocols</h4>
+        <ul>
+            <li>SMTP (Simple Mail Transfer Protocol)
+                <ul>
+                    <li class="port">Port: TCP 25 or 465 (encrypted)</li>
+                    <li>Email between clients and SMTP server</li>
+                    <li>Encrypted with SSL or TLS</li>
+                </ul>
+            </li>
+            <li>POP 3 (Post Office Protocol 3)
+                <ul>
+                    <li class="port">Port: TCP 110 or 995 (encrypted)</li>
+                    <li>Servers to clients</li>
+                    <li>Encrypted with SSL or TLS</li>
+                </ul>
+            </li>
+            <li>IMAP4 (Internet Message Access Protocol v4)
+                <ul>
+                    <li class="port">Port: 143 or 993 (encrypted)</li>
+                    <li>Stores email on an email server</li>
+                    <li>Encrypted with SSL or TLS</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h4>Wireless Access Point Security Protocols</h4>
+        <ul>
+            <li>WEP (Wired Equivalent Privacy)
+                <ul>
+                    <li>Original secuiryt protocol</li>
+                    <li>No longer used</li>
+                </ul>
+            </li>
+            <li>WPA (WiFi Protected Access)
+                <ul>
+                    <li>WEP interim replacement</li>
+                </ul>
+            </li>
+            <li>WPA2
+                <ul>
+                    <li>Permanent replacement for WEP and WPA</li>
+                </ul>
+            </li>
+        </ul>
+        <h4>Tunneling Protocl</h4>
+        <ul>
+            <li>L2T (Layer 2 Tunneling Protocol)
+                <ul>
+                    <li class="port">Port: UDP 1701</li>
+                    <li>No encryption</li>
+                    <li>Provides security for VPN tunnel</li>
+                </ul>
+            </li>
+            <li>NAT (Network Address Translation)
+                <ul>
+                    <li>Not compatible with IPsec <ul>
+                        <li>Manipulates the IP header when translating the IP address</li>
+                        <li>Recieving end of the tunnel discards packet as invalid</li>
+                        <li>Need to find a way through NAT devices (NAT-T or NAT Traversal)</li>
+                    </ul></li>
+                </ul>
+            </li>
+            <li>TLS and SSL
+                <ul>
+                    <li class="port">Port: 443</li>
+                    <li>Encrypts VPN traffic using SSL or TLS</li>
+                </ul>
+            </li>
+            <li>PPTP (Point-to-Point TUnneling Protocol)
+                <ul>
+                    <li class="port">Port: TCP 1723</li>
+                    <li>Uses Microsofts point to point encryption to s ecure the channel</li>
+                </ul>
+            </li>
+            <li>Site-to-Site VPNs
+                <ul>
+                    <li class="port">Port:</li>
+                    <li>Includes two VPN servers that act as gateways for two networks seperated geographically</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 
 
 

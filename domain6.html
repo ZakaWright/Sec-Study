@@ -51,7 +51,80 @@
 	</nav>
 
 
+<div class="container">
+    <h1>Domain 6 - Cryptography</h1>
+    <h4>Authenticating RAS (Remote Access Service) Clients</h4>
+    <ul>
+         <li>PAP (Password Authentication Protocol) <ul>
+                <li>Used with PPP (Point to point Protocol) to authenticate clients</li>
+                <li>Sends password and pins in plain text</li>
+            </ul></li>
+            <li>CHAP (Challenge Handshake Authentication Protocol) <ul>
+                <li>Used with PPP to authenticate remote users</li>
+                <li>More secure than PAP</li>
+                <li>Client and server share a secret used in authentication (sent in cipher text)</li>
+                <li>Preformed at connection and several times after</li>
+                <li>MS-CHAP and MS-CHAPv2 <ul>
+                    <li>Improved for MS clients</li>
+                    <li>MS-CHAPv2 has the ability to preform mutual authentication</li>
+                </ul></li>
+            </ul></li>
 
+        <li>RADIUS <ul>
+                <li><img src="" alt="RADIUS DIAGRAM"></li>
+                <li>Use a centralized server to provide authentication for clients accessing multiple servers</li>
+                <li>Uses UDP</li>
+                <li>Only encrypts the password</li>
+            </ul></li>
+        <li>Diameter <ul>
+            <li>Improved version of RADIUS</li>
+            <li>Supports EAP (Extensible Authentication Protocol) to increase security</li>
+            <li>Uses TCP</li>
+        </ul></li>
+        <li>XTACAS <ul>
+                <li>Old Cisco proprietary protocol</li>
+            </ul></li>
+            <li>TACAS+ (Terminal Access Controller Access-Control System Plus) <ul>
+                <li>Cisco alternative to RADIUS</li>
+                <li>Can interact with Kerberos for authentication</li>
+            </ul></li>
+        <li>AAA Protocols <ul>
+            <li>Provide authentication, authorization, and accounting</li>
+        </ul></li>
+
+    </ul>
+
+    <br>
+    <a href="protocols.html">Protocols</a>
+    <br>
+    <h4>WiFi Security - TKIP vs CCMP</h4>
+    <ul>
+        <li>TKIP (Temporal Key Integrity Protocol)
+            <ul>
+                <li>Older encryption used with WPA</li>
+                <li>Didn't require new hardware</li>
+                <li>Has been cracked</li>
+            </ul>
+        </li>
+        <li>CCMP
+            <ul>
+                <li>Used with WPA2</li>
+            </ul>
+        </li>
+        <li>IEEE 802.1x
+            <ul>
+                <li>Server challenges systems trying to connect to authenticate</li>
+                <li>Prevents rogue devices from being able to access network resources</li>
+            </ul>
+        </li>
+        <li>Personal vs Enterprise Mode
+            <ul>
+                <li>Personal mode lets users access the wireless network anonymously with PSK (preshared key) or passphrase</li>
+                <li>Enterprise mode forces users to authenticate with unique credentials before grantime them access to the network</li>
+            </ul>
+        </li>
+    </ul>
+</div>
 
 
 
