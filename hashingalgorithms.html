@@ -54,14 +54,73 @@
 
 
 	<div class="container">
-		<h3>MD5</h3>
-		<h3>HMAC</h3>
-		<h3>SHA</h3>
+	    <h1>Hashing Algorithms</h1>
+	    <br>
+		<h4>MD5 (Message Digest 5)</h4>
 		<ul>
-			<li>SHA-0</li>
-			<p></p>
-			<li>SHA-1</li>
-			<p></p>
+		    <li>128 Bit Hash</li>
+		    <li>Hexadecimal</li>
+		</ul>
+		<h4>SHA</h4>
+		<ul>
+			<li>SHA-0 <ul>
+			    <li>Not used</li>
+			</ul></li>
+			<li>SHA-1 <ul>
+			    <li>160 bit hashes</li>
+			</ul></li>
+			<li>SHA-2 <ul>
+			    <li>Four versions: <ol>
+			        <li>SHA-224</li>
+			        <li>SHA-256</li>
+			        <li>SHA-384</li>
+			        <li>SHA-512</li>
+			    </ol></li>
+			    <li>The number refers to the number of bits</li>
+			</ul></li>
+			<li>SHA-3 <ul>
+                <li>Four versions: <ol>
+			        <li>SHA-224</li>
+			        <li>SHA-256</li>
+			        <li>SHA-384</li>
+			        <li>SHA-512</li>
+			    </ol></li>
+			    <li>Different algorithm than SHA-2</li>
+			</ul></li>
+		</ul>
+		<h4>HMAC (Hash-based Message Authentication Code)</h4>
+		<ul>
+		    <li>Uses MD5 and SHA-1</li>
+		    <li>Also uses a shared secret key to add randomness</li>
+		    <li>Only the sender and reciever know the secret key</li>
+		</ul>
+		<h4>RIPEMD (RACE Inegrity Primitives Evaluation Message Digest</h4>
+		<ul>
+		    <li>Crerates hashes of different sizes (fixed sizes)<ul>
+		        <li>160-bit</li>
+		        <li>128-bit</li>
+		        <li>256-bit</li>
+		        <li>320-bit</li>
+		    </ul></li>
+		</ul>
+		<h4>LANMAN (LAN Manager)</h4>
+		<ul>
+		    <li>Very old</li>
+		    <li>Used to provide backward compatibility to Windows 95,98, and ME clients</li>
+		    <li>Some newer authentication protocols store passwords in LANMAN format if password is less than 15 characters long (can't handle passwords longer than 15 characters</li>
+		    <li>Should be disabled on all computers within a network for best security</li>
+		</ul>
+		<h4>NTLM (NT LAN Manager)</h4>
+		<ul>
+		    <li>Two versions <ul>
+		        <li>NTLMv1 <ul>
+		            <li>Uses MD4 hash of users password</li>
+		            <li>Can also use LANMAN for short passwords</li>
+		        </ul></li>
+		        <li>NTLMv2 <ul>
+		            <li>Uses MD5</li>
+		        </ul></li>
+		    </ul></li>
 		</ul>
 	</div>
 

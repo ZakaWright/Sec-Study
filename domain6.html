@@ -126,6 +126,118 @@
     </ul>
 </div>
 
+<br>
+
+<div class="container">
+    <h3>Basic Cryptography</h3>
+    <h4>Hashing</h4>
+    <a href="<has></has>">Hashing Algorithms</a>
+    <ul>
+        <li>Hashing Files <ul>
+            <li>If a file's hash changes you know the integrity is lost but not why</li>
+        </ul></li>
+        <li>Hashing Passwords <ul>
+            <li>Passwords are often stored as hashes</li>
+            <li>Many systems have additional character salts to passwords to thwart attacks</li>
+        </ul></li>
+        <li>Hashing Messages <ul>
+            <li>Send a hash with a message to know if integrity is maintained</li>
+        </ul></li>
+        <li>Using HMAC <ul>
+            <li>Prevents an attacker from changing what the hash originally was before they modify a message</li>
+        </ul></li>
+    </ul>
+    <br>
+    <h4>Symmetric Encryption</h4>
+    <ul>
+        <li>Uses same key to encrypt and decrypt data</li>       <--->Skipped block vs Stream </--->
+        <li>Changes the key multiple times a day</li>
+        <li>Types: <ul>
+            <li>AES
+                <ul>
+                    <li>Block cipher</li>
+                    <li>US block symmetric encryption standard</li>
+                    <li>128 bit keys but can also use 256 bits or 192 bits</li>
+                </ul>
+            </li>
+            <li>DES (Data Encryption Standard)<ul>
+                <li>Old</li>
+                <li>Encrypts data in 64 bit blocks</li>
+
+                </ul></li>
+            <li>3DES (Tripple DES) <ul>
+                <li>Keep running data through a DES algorithm three times</li>
+                <li>Uses key sizes of 112 bits or 168 bits</li>
+            </ul></li>
+            <li>RC4 (Rivest Cipher v4) <ul>
+                <li>Symmetric stream cipher between 40 and 2048 bits</li>
+            </ul></li>
+            <li>Blowfish <ul>
+                <li>Strong symmetric block cipher</li>
+                <li>Encrypts in 64 bit blocks</li>
+                <li>Supports key sizes between 32 and 448 bits</li>
+                <li>Faster than AES except when changing keys/li>
+            </ul></li>
+            <li>Twofish <ul>
+                <li>128 bit</li>
+                <li>Built to compete with AES</li>
+                <li>128 bit blocks</li>
+            </ul></li>
+            <li>One Time Pad <ul>
+                <li>Most secure</li>
+                <li>Physical card that is destroyed after use</li>
+            </ul></li>
+            </ul>
+            <li>Block Ciphers <ul>
+                <li>Break data into specefic block size</li>
+                <li>Pads the data to fill the block if necesary</li>
+                <li>More secure than stream cipher</li>
+            </ul></li>
+            <li>Stream Ciphers <ul>
+                <li>Encrypts data as a stream of bits instead of dividing into blocks</li>
+                <li>More points to attack</li>
+                <li>Engine generating stream does not change</li>
+            </ul></li>
+    </ul>
+
+    <h4>Asymmetric Encryption</h4>
+    <ul>
+        <li>Uses two keys (private and public)</li>
+        <li>Certificates <ul>
+            <li>Digital document that includes public key information on the owner of the certificate</li>
+            <li>Issued and mangaged by Certificate Authorities</li>
+            <li>Parts:
+                <ul>
+                    <li>Serial number (used to validate a certificate)</li>
+                    <li>Issuer</li>
+                    <li>Validity dates</li>
+                    <li>Subject</li>
+                    <li>Public key</li>
+                    <li>Usage</li>
+                </ul>
+            </li>
+        </ul></li>
+        <li>RSA <ul>
+            <li>Uses both public and private key in a matched pair</li>
+            <li>Commonly used to share a symmetric key</li>
+            <li>Uses prime numbers</li>
+            <li>Key size 1024 to 4096</li>
+        </ul></li>
+        <li>Ephemeral Keys <ul>
+            <li>Asymmetrical one time key used during exchange process</li>
+            <li>Allows for forward secrecy <ul>
+                <li>Compromise of long term key does not compromise past session keys (perfect)</li>
+            </ul></li>
+        </ul></li>
+        <li>Elliptic Curve Cryptography (ECC) <ul>
+            <li>Fast with small key sizes</li>
+            <li>Common in mobile computing</li>
+            <li></li>
+            <li></li>
+        </ul></li>
+    </ul>
+</div>
+
 
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
