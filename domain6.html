@@ -230,14 +230,120 @@
         <li>Elliptic Curve Cryptography (ECC) <ul>
             <li>Fast with small key sizes</li>
             <li>Common in mobile computing</li>
-            <li></li>
-            <li></li>
+        </ul></li>
+        <li>Diffie-Helman
+            <ul>
+                <li>Used to privately share a symmetric key between two parties</li>
+                <li>Asymmetric encryption mechanism</li>
+            </ul>
+        </li>
+    </ul>
+       <h4>Other types of Cryptography</h4>
+       <ul>
+        <li>Steganography <ul>
+            <li>Hides data inside data</li>
+            <li>Data can be hiden by maniplating bits or in the white space of a file</li>
+        </ul></li>
+        <li>Quantum Cryptography <ul>
+            <li>Use photons</li>
+            <li>Considered 100% secure <ul>
+                <li>Once a baseline is established, the two ends can read changes in light patterns to know if someone is eavesdropping and cease transmissions</li>
+            </ul></li>
         </ul></li>
     </ul>
+
+</div>
+<div class="container">
+<h3>Using Crypto Protocols</h3>
+    <h4>Protecting Email</h4>
+    <ul>
+        <li>Digital Signatures <ul>
+            <li><a href="definitions.html">Definition</a></li>
+            <li>Proveds authentication, non-repudiation, and integrity</li>
+            <li>Process <ul>
+                <li>Sender side: <ul>
+                    <li>Click send</li>
+                    <li>Hash created</li>
+                    <li>Hash is encrypted using senders private key</li>
+                    <li>Sent to reciever</li>
+                </ul></li>
+                <li>Recieving side: (verify the digital signature)<ul>
+                    <li>System retrives sender's certificate</li>
+                    <li>Decrypts hash with the public key</li>
+                    <li>Calculates new hash from the meassage</li>
+                    <li>Compares the two hashes</li>
+                </ul></li>
+            </ul></li>
+        </ul></li>
+        <li>Encrypting Email <ul>
+            <li>Only Asymmetric Encryption <ul>
+                <li>Sender finds reciever's public key and encrypts the email</li>
+                <li>Reciver decyrpts with their private key</li>
+            </ul></li>
+            <li>Both Asymmetric and Symmetric Encryption <ul>
+                <li>Use asymmetric encryption to privately send a symmetric key (think DH)</li>
+                <li>Symmetric encryption (faster) is used to encrypt the whole message</li>
+            </ul></li>
+        </ul></li>
+        <li>S/MIME (Secure/Multipurpose Internet Mail Extensions)
+        <ul>
+            <li><em>Most popular standards to digitally sign and encrypt email</em></li>
+            <li>Uses RSA (asymmetric) and AES (symmetric)</li>
+            <li>Can encrypt email at rest and in transit</li>
+        </ul></li>
+        <li>PGP (Pretty Good Privacy) and GPG (GNU Privacy Guard)
+        <ul>
+            <li>Method to secure email communications</li>
+            <li>Create your own certificates</li>
+            <li>Uses decentralized web of trust</li>
+            <li>GPG is open source verison of PGP</li>
+        </ul></li>
+    </ul>
+    <h4>Transport Encryption</h4>
+    <p>Methods used to encrypt data in transit</p>
+        <li><a href="protocols.html">IPsec</a>
+        <ul>
+            <li>Encrypts data in tunnel mode with VPNs</li>
+        </ul></li>
+        <li>Cipher Suites
+        <ul>
+            <li>Provide encryption, authentication, and integrity</li>
+            <li>Identified with cipher identifier (a string of hexadecimal character and a coded name)</li>
+            <li>Choosing the right ciphers to use depends on software and hardware restrictions</li>
+        </ul></li>
+        <h4>Key Stretching</h4>
+        <ul>
+           <il>Helps prevent password cracking  by using salting techniques</il>
+            <li>Bcrypt is based on the Blowfish block cipher (as much salt as you like)</li>
+            <li>PBKDF2 is sued by iOS, WPA2, and Cisco systems (set ammount of salt)</li>
+        </ul>
+        <h4>In-band and Out-of-band Key Exchange</h4>
+        <ul>
+            <li>In-Band shares the key in the same communications channel as the encrypted data</li>
+            <li>Out-of-Band shares the key in a different communication channle as the encrypted data (ex physically delivering key)</li>
+        </ul>
 </div>
 
+<div class="container">
+<h3>PKI (Public Key Infrastructure)</h3>
+<h4>Certificate Authority (CA)</h4>
+<ul>
+    <li>Issues, manages, validates, and revokes certificates</li>
+    <li>Can be large/public or small/private</li>
+</ul>
+<h4>Certificate Trust Paths and Trust Models</h4>
+<ul>
+    <li>CAs are trusted by placing </li>
+</ul>
+<h4>Self Signed Certificates</h4>
 
+<h4>Wildcard Certificates</h4>
 
+<h4>Registration</h4>
+
+<h4>Revoking Certificates</h4>
+
+</div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
