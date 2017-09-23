@@ -333,16 +333,61 @@
 </ul>
 <h4>Certificate Trust Paths and Trust Models</h4>
 <ul>
-    <li>CAs are trusted by placing </li>
+    <li>CAs are trusted by placing a root certificate (first certificate created by a CA) in a trusted root CA store</li>
 </ul>
 <h4>Self Signed Certificates</h4>
-
+<ul>
+    <li>Not trusted by default</li>
+</ul>
 <h4>Wildcard Certificates</h4>
-
+<ul>
+    <li>Certifies the subdomains of a site</li>
+    <li>Certificate for *.domain.com</li>
+</ul>
 <h4>Registration</h4>
-
+<ul>
+    <li>Steps:
+        <ol>
+            <li>Create a public/private key pair</li>
+            <li>Send a Certificate Signing Request (CSR) for the certificate</li>
+        </ol>
+    </li>
+</ul>
 <h4>Revoking Certificates</h4>
+<ul> <li>Reasons:
+       <ul>
+        <li>Key experation (most common)</li>
+        <li>Key compromise</li>
+        <li>CA compromise</li>
+        <li>Change of affiliation</li>
+        <li>Superseded</li>
+        <li>Cease of operation</li>
+        <li>Certificate hold</li>
+    </ul></li>
+    <li>CAs use CRL (certificate revocation lists) to revoke certificates</li>
+    </ul>
 
+    <h4>Validating Certificates</h4>
+    <ul>
+        <li>Client initiates session requiring certificate</li>
+        <li>Server responds with copy of ther certificate wth the public key</li>
+        <li>Client queries the CA for copy of the CRL</li>
+        <li>CA resonds with copy of CRL (if the certificate is revoked the client recieves an error)</li>
+        <li>Alternatively use the OCSP (Online Certificate Status Protocol) in which the CA simply responds with good, revoked, or unknown to the clients query using the certificate serial number</li>
+    </ul>
+    <h4>Outdated Certificates</h4>
+    <ul>
+        <li>Usually when someone recieves a new smartcard</li>
+        <li>New certificate needs to be published to fix the problem</li>
+    </ul>
+    <h4>Key Escrow</h4>
+    <ul>
+        <li>Useful for recovery</li>
+    </ul>
+    <h4>Recovery Agent</h4>
+    <ul>
+        <li>Sometimes can be recovered from a private key escrow</li>
+    </ul>
 </div>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
